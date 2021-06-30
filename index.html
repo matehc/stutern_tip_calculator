@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="display-box">
+        <div class="tip-display">
+          <div class="money_wrapper">
+            <div class="money">
+              <div class="total-amount-display amt-box">
+                <span class="label"> Total Amt: </span>
+                <span class="amount-label"> 0 </span>
+              </div>
+
+              <div class="tip-amount-display amt-box">
+                <span class="label"> Tip Amt: </span>
+                <span class="tip-amt-label"> 0 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="share-display">
+          <div class="money_wrapper">
+            <div class="money">
+              <div class="tip-per-person-display amt-box">
+                <span class="label"> Tip(each): </span>
+                <span class="tip-each-label"> 0 </span>
+              </div>
+              <div class="amount-per-person-display amt-box">
+                <span class="label"> AMT(each): </span>
+                <span class="amt-each-label"> 0 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-box">
+        <form action="">
+          <div class="price input-box">
+            <input type="text" name="price" id="price" required />
+            <label for="price"><span class="content-name">Price</span></label>
+          </div>
+          <div class="tip input-box">
+            <input type="text" name="tip" id="tip" required />
+            <label for="tip"><span class="content-name">Tip</span></label>
+          </div>
+          <div class="people input-box">
+            <input type="number" name="people" id="people" required />
+            <label for="people"><span class="content-name">People</span></label>
+          </div>
+          <button class="btn-calc btn">Calculate</button>
+          <button type="reset" class="btn-reset btn">Reset</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="/js/index.js" defer></script>
+</html>
